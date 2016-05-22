@@ -333,6 +333,10 @@ border-radius:0 0 0 0;
 -webkit-box-shadow:0 0 0 0 #ccc;
 box-shadow:0 0 0 0 #ccc;
 }
+body:after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content: url(fbg.jpg);
+}
 #body-min-footer{
 margin:0 auto;
 overflow:hidden
