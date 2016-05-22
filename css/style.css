@@ -333,7 +333,7 @@ border-radius:0 0 0 0;
 -webkit-box-shadow:0 0 0 0 #ccc;
 box-shadow:0 0 0 0 #ccc;
 }
-#bodyminusfooter{
+#body-min-footer{
 margin:0 auto;
 overflow:hidden
 }
@@ -1088,12 +1088,13 @@ background-color:#18616e;
 -webkit-transition:-webkit-transform 0.3s;
 transition:transform 0.3s
 }
-.bodycontrans{
+.bodycontainertrans{
 -ms-transition:transform 0.3s ease 0s;
 -moz-transition:transform 0.3s ease 0s;
 -webkit-transition:transform 0.3s ease 0s;
 -o-transition:transform 0.3s ease 0s;
 transition:transform 0.3s ease 0s
+overflow:hidden;
 }
 .c-menu__items{
 list-style:none;
