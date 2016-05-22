@@ -1,21 +1,21 @@
 RewriteEngine On
 
-RewriteCond %{HTTP_HOST} ^www\.topmenuclosed\.nl [NC]
-RewriteRule (.*) http://topmenuclosed.nl/$1 [R=301,L] 
+RewriteCond %{HTTP_HOST} ^www\.vanderwerffhospitality\.nl [NC]
+RewriteRule (.*) http://vanderwerffhospitality.nl/$1 [R=301,L] 
 
 RewriteCond %{HTTP_HOST} ^XXX\.XXX\.XXX\.XXX 
-RewriteRule (.*) http://www.topmenuclosed.nl/$1 [R=301,L]
+RewriteRule (.*) http://www.vanderwerffhospitality.nl/$1 [R=301,L]
 
 # Unless directory, remove trailing slash
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([^/]+)/$ http://topmenuclosed.nl/$1 [R=301,L]
+RewriteRule ^([^/]+)/$ http://vanderwerffhospitality.nl/$1 [R=301,L]
 
 # Redirect external .php requests to extensionless url
 RewriteCond %{THE_REQUEST} ^(.+)\.php([#?][^\ ]*)?\ HTTP/
-RewriteRule ^(.+)\.php$ http://topmenuclosed.nl/$1 [R=301,L]
+RewriteRule ^(.+)\.php$ http://vanderwerffhospitality.nl/$1 [R=301,L]
 
-# Resolve .php file for extensionless php urls
-RewriteRule ^([^/.]+)$ $1.php [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 RewriteCond %{HTTP_USER_AGENT} libwww-perl.* 
 RewriteRule .* ? [F,L]
