@@ -253,26 +253,23 @@
 		<script src="js/menu.js"></script>
 		<script src="js/revealonscroll.js"></script>
 		<script src="js/parallax.js"></script>
-		<script>function preloader() {
-	if (document.images) {
-		var img1 = new Image();
-		img1.src = "/fbg.jpg";
-	}
-}
-function addLoadEvent(func) {
-	var oldonload = window.onload;
-	if (typeof window.onload != 'function') {
-		window.onload = func;
-	} else {
-		window.onload = function() {
-			if (oldonload) {
-				oldonload();
+		<div class="hidden">
+	<script type="text/javascript">
+		<!--//--><![CDATA[//><!--
+			var images = new Array()
+			function preload() {
+				for (i = 0; i < preload.arguments.length; i++) {
+					images[i] = new Image()
+					images[i].src = preload.arguments[i]
+				}
 			}
-			func();
-		}
-	}
-}
-addLoadEvent(preloader);
+			preload(
+				"/fbg.jpg"
+			)
+		//--><!]]>
+	</script>
+</div>
+		<script>
 (function($) {
     
     jQuery.scrollSpeed = function(step, speed, easing) {
