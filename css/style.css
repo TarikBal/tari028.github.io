@@ -117,64 +117,78 @@ border-bottom:1px solid #cfe0e3;
 box-shadow:0 0 0 0 #cfe0e3
 }
 .fullheight{
-min-height:100vh!important;
+min-height:100vh !important;
+}
+@media only screen and (min-device-width:320px){
+.fullheight{
+min-height:568px !important;
+height:auto;
+}
+
+}
+@media only screen and (min-device-width:520px){
+.fullheight{
+min-height:668px !important;
+height:auto;
+}
+
 }
 @media only screen and (min-device-width :768px) and (max-device-width :1024px) and (orientation :landscape){
 .fullheight{
-min-height:768px;
+min-height:768px !important;
 height:auto;
 }
 
 }
 @media only screen and (min-device-width :768px) and (max-device-width :1024px) and (orientation :portrait){
 .fullheight{
-min-height:1024px;
+min-height:1024px !important;
 height:auto;
 }
 
 }
 @media only screen and (min-device-width:320px) and (max-device-height:568px) and (orientation :landscape) and (-webkit-device-pixel-ratio:2){
 .fullheight{
-min-height:320px;
+min-height:320px !important;
 height:auto;
 }
 
 }
 @media only screen and (min-device-width:320px) and (max-device-height:568px) and (orientation :portrait) and (-webkit-device-pixel-ratio:2){
 .fullheight{
-min-height:568px;
+min-height:568px !important;
 height:auto;
 }
 
 }
 @media only screen and (min-device-width :320px) and (max-device-width :480px) and (orientation :landscape) and (-webkit-min-device-pixel-ratio :2){
 .fullheight{
-min-height:320px;
+min-height:320px !important;
 height:auto;
 }
 
 }
 @media only screen and (min-device-width :320px) and (max-device-width :480px) and (orientation :portrait) and (-webkit-min-device-pixel-ratio :2){
 .fullheight{
-min-height:480px;
+min-height:480px !important;
 height:auto;
 }
 
 }
 @media only screen and (min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio:2) and (orientation:portrait){
-min-height:667px;
+min-height:667px !important;
 height:auto;
 }
 @media only screen and (min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio:2) and (orientation:landscape){
-min-height:375px;
+min-height:375px !important;
 height:auto;
 }
 @media only screen and (min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3) and (orientation:portrait){
-min-height:736px;
+min-height:736px !important;
 height:auto;
 }
 @media only screen and (min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3) and (orientation:landscape){
-min-height:414px;
+min-height:414px !important;
 height:auto;
 }
 .insideheadertextvak form,.form1{
@@ -316,9 +330,9 @@ margin-bottom:0;
 border-radius:0 0 0 0;
 -moz-box-shadow:0 0 0 0 #ccc;
 -webkit-box-shadow:0 0 0 0 #ccc;
-box-shadow:0 0 0 0 #ccc
+box-shadow:0 0 0 0 #ccc;
 }
-#body-min-footer{
+#bodyminusfooter{
 margin:0 auto;
 overflow:hidden
 }
@@ -1073,14 +1087,12 @@ background-color:#18616e;
 -webkit-transition:-webkit-transform 0.3s;
 transition:transform 0.3s
 }
-.bodycontainertrans{
+.bodycontrans{
 -ms-transition:transform 0.3s ease 0s;
 -moz-transition:transform 0.3s ease 0s;
 -webkit-transition:transform 0.3s ease 0s;
 -o-transition:transform 0.3s ease 0s;
-transition:transform 0.3s ease 0s;
-
-overflow:hidden;
+transition:transform 0.3s ease 0s
 }
 .c-menu__items{
 list-style:none;
