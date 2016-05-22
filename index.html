@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="socialstyle.css" type="text/css">
 		<link rel="icon" href="favicon.png" type="image/png" />		
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
-		<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>	
 	</head>
 	<body>
 		<div id="bodycon" class="bodycontainertrans o-wrapper">
@@ -37,7 +37,7 @@
 				</div>
 				<section id="content" name="top" class="hpg">
 					<section style="background-color:#000" >
-						<section id="header-back" style="background-size: cover;  background-color:#000; background-position:right top;" class="container-fluid fullheight">
+						<section id="header-back" style="background-image:no-repeat; background-size: cover;  background-color:#000; background-position:right top;" class="container-fluid fullheight">
 							<div class="container animated slideInLeft" >
 								<h1 class="headerHeader">Van der Werff Hospitality</h1>
 								<p class="headerText">
@@ -253,27 +253,11 @@
 		<script src="js/menu.js"></script>
 		<script src="js/revealonscroll.js"></script>
 		<script src="js/parallax.js"></script>
-		<script>
-		function preloader() {
-	if (document.getElementById) {
-		document.getElementById("header-back").style.background = "url('fbg.jpg') no-repeat";
-	}
-}
-function addLoadEvent(func) {
-	var oldonload = window.onload;
-	if (typeof window.onload != 'function') {
-		window.onload = func;
-	} else {
-		window.onload = function() {
-			if (oldonload) {
-				oldonload();
-			}
-			func();
-		}
-	}
-}
-addLoadEvent(preloader);
-
+		<script>$(document).ready(function(){$("#header-back").animate({opacity:0},0).css({"background-image":"url(fbg.jpg)"}).animate({opacity:1},2500)}),$(function(){$("a[href*=#]:not([href=#])").click(function(){if($(window).width()<600&&$(".c-menu__close").trigger("click"),location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var a=$(this.hash);if(a=a.length?a:$("[name="+this.hash.slice(1)+"]"),a.length)return $("html,body").animate({scrollTop:a.offset().top},1e3),!1}})});
+	// Plugin: jQuery.scrollSpeed
+// Source: github.com/nathco/jQuery.scrollSpeed
+// Author: Nathan Rutzky
+// Update: 1.0.2
 (function($) {
     
     jQuery.scrollSpeed = function(step, speed, easing) {
@@ -368,11 +352,8 @@ addLoadEvent(preloader);
     
 })(jQuery);
 $(function() {  
-
-
     // Custom Easing
     jQuery.scrollSpeed(100, 800);
-
 });
     </script>
 	</body>
