@@ -117,78 +117,78 @@ border-bottom:1px solid #cfe0e3;
 box-shadow:0 0 0 0 #cfe0e3
 }
 .fullheight{
-min-height:100vh !important;
+min-height:100vh ;
 }
 @media only screen and (min-device-width:320px){
 .fullheight{
-min-height:568px !important;
+min-height:568px ;
 height:auto;
 }
 
 }
 @media only screen and (min-device-width:520px){
 .fullheight{
-min-height:668px !important;
+min-height:668px ;
 height:auto;
 }
 
 }
 @media only screen and (min-device-width :768px) and (max-device-width :1024px) and (orientation :landscape){
 .fullheight{
-min-height:768px !important;
+min-height:768px ;
 height:auto;
 }
 
 }
 @media only screen and (min-device-width :768px) and (max-device-width :1024px) and (orientation :portrait){
 .fullheight{
-min-height:1024px !important;
+min-height:1024px ;
 height:auto;
 }
 
 }
 @media only screen and (min-device-width:320px) and (max-device-height:568px) and (orientation :landscape) and (-webkit-device-pixel-ratio:2){
 .fullheight{
-min-height:320px !important;
+min-height:320px ;
 height:auto;
 }
 
 }
 @media only screen and (min-device-width:320px) and (max-device-height:568px) and (orientation :portrait) and (-webkit-device-pixel-ratio:2){
 .fullheight{
-min-height:568px !important;
+min-height:568px ;
 height:auto;
 }
 
 }
 @media only screen and (min-device-width :320px) and (max-device-width :480px) and (orientation :landscape) and (-webkit-min-device-pixel-ratio :2){
 .fullheight{
-min-height:320px !important;
+min-height:320px ;
 height:auto;
 }
 
 }
 @media only screen and (min-device-width :320px) and (max-device-width :480px) and (orientation :portrait) and (-webkit-min-device-pixel-ratio :2){
 .fullheight{
-min-height:480px !important;
+min-height:480px ;
 height:auto;
 }
 
 }
 @media only screen and (min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio:2) and (orientation:portrait){
-min-height:667px !important;
+min-height:667px ;
 height:auto;
 }
 @media only screen and (min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio:2) and (orientation:landscape){
-min-height:375px !important;
+min-height:375px ;
 height:auto;
 }
 @media only screen and (min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3) and (orientation:portrait){
-min-height:736px !important;
+min-height:736px ;
 height:auto;
 }
 @media only screen and (min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3) and (orientation:landscape){
-min-height:414px !important;
+min-height:414px ;
 height:auto;
 }
 .insideheadertextvak form,.form1{
