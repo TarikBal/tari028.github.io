@@ -119,20 +119,8 @@ box-shadow:0 0 0 0 #cfe0e3
 .fullheight{
 min-height:100vh ;
 }
-@media only screen and (min-device-width:320px){
-.fullheight{
-min-height:568px ;
-height:auto;
-}
 
-}
-@media only screen and (min-device-width:520px){
-.fullheight{
-min-height:668px ;
-height:auto;
-}
 
-}
 @media only screen and (min-device-width :768px) and (max-device-width :1024px) and (orientation :landscape){
 .fullheight{
 min-height:768px ;
@@ -190,6 +178,19 @@ height:auto;
 @media only screen and (min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3) and (orientation:landscape){
 min-height:414px ;
 height:auto;
+}
+@media only screen and (min-device-width:520px){
+.fullheight{
+min-height:668px ;
+height:auto;
+}
+
+}@media only screen and (min-device-width:320px){
+.fullheight{
+min-height:568px ;
+height:auto;
+}
+
 }
 .insideheadertextvak form,.form1{
 color:#fff;
