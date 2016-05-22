@@ -253,6 +253,28 @@
 		<script src="js/menu.js"></script>
 		<script src="js/revealonscroll.js"></script>
 		<script src="js/parallax.js"></script>
-		<script>$(document).ready(function(){$("#header-back").animate({opacity:0},0).css({"background-image":"url(fbg.jpg)"}).animate({opacity:1},2500)}),$(function(){$("a[href*=#]:not([href=#])").click(function(){if($(window).width()<600&&$(".c-menu__close").trigger("click"),location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var a=$(this.hash);if(a=a.length?a:$("[name="+this.hash.slice(1)+"]"),a.length)return $("html,body").animate({scrollTop:a.offset().top},1e3),!1}})});</script>	
+		<script>$(document).ready(function(){$("#header-back").animate({opacity:0},0).css({"background-image":"url(fbg.jpg)"}).animate({opacity:1},2500)}),$(function(){$("a[href*=#]:not([href=#])").click(function(){if($(window).width()<600&&$(".c-menu__close").trigger("click"),location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var a=$(this.hash);if(a=a.length?a:$("[name="+this.hash.slice(1)+"]"),a.length)return $("html,body").animate({scrollTop:a.offset().top},1e3),!1}})});
+		if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
+window.onmousewheel = document.onmousewheel = wheel;
+
+function wheel(event) {
+    var delta = 0;
+    if (event.wheelDelta) delta = event.wheelDelta / 120;
+    else if (event.detail) delta = -event.detail / 3;
+
+    handle(delta);
+    if (event.preventDefault) event.preventDefault();
+    event.returnValue = false;
+}
+
+function handle(delta) {
+    var time = 750;
+	var distance = 300;
+    
+    $('html, body').stop().animate({
+        scrollTop: $(window).scrollTop() - (distance * delta)
+    }, time );
+}
+		</script>	
 	</body>
 </html>
