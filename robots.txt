@@ -1,12 +1,4 @@
 User-agent: * 
-Sitemap: http://www.topmenuclosed.nl/sitemap.xml
-Disallow: /content/ 
-Disallow: /meta/ 
-Disallow: /img/ 
+Sitemap: http://www.vanderwerffhospitality.nl/sitemap.xml
 Disallow: /js/ 
 Disallow: /css/ 
-Disallow: /includes/ 
-Disallow: /login/ 
-Disallow: /i/ 
-Disallow: /fonts/ 
-Disallow: /ckeditor/
