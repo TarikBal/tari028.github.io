@@ -1,0 +1,12 @@
+User-agent: * 
+Sitemap: http://www.topmenuclosed.nl/sitemap.xml
+Disallow: /content/ 
+Disallow: /meta/ 
+Disallow: /img/ 
+Disallow: /js/ 
+Disallow: /css/ 
+Disallow: /includes/ 
+Disallow: /login/ 
+Disallow: /i/ 
+Disallow: /fonts/ 
+Disallow: /ckeditor/
