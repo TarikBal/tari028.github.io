@@ -117,69 +117,69 @@ border-bottom:1px solid #cfe0e3;
 box-shadow:0 0 0 0 #cfe0e3
 }
 .fullheight{
-min-height:100vh!important
+min-height:100vh !important;
 }
 @media only screen and (min-device-width :768px) and (max-device-width :1024px) and (orientation :landscape){
 .fullheight{
-min-height:768px;
-height:auto
+min-height:768px !important;
+height:auto;
 }
 
 }
 @media only screen and (min-device-width :768px) and (max-device-width :1024px) and (orientation :portrait){
 .fullheight{
-min-height:1024px;
-height:auto
+min-height:1024px !important;
+height:auto;
 }
 
 }
 @media only screen and (min-device-width:320px) and (max-device-height:568px) and (orientation :landscape) and (-webkit-device-pixel-ratio:2){
 .fullheight{
-min-height:320px;
-height:auto
+min-height:320px !important;
+height:auto;
 }
 
 }
 @media only screen and (min-device-width:320px) and (max-device-height:568px) and (orientation :portrait) and (-webkit-device-pixel-ratio:2){
 .fullheight{
-min-height:568px;
-height:auto
+min-height:568px !important;
+height:auto;
 }
 
 }
 @media only screen and (min-device-width :320px) and (max-device-width :480px) and (orientation :landscape) and (-webkit-min-device-pixel-ratio :2){
 .fullheight{
-min-height:320px;
-height:auto
+min-height:320px !important;
+height:auto;
 }
 
 }
 @media only screen and (min-device-width :320px) and (max-device-width :480px) and (orientation :portrait) and (-webkit-min-device-pixel-ratio :2){
 .fullheight{
-min-height:480px;
-height:auto
+min-height:480px !important;
+height:auto;
 }
 
 }
 @media only screen and (min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio:2) and (orientation:portrait){
-min-height:667px;
-height:auto
+min-height:667px !important;
+height:auto;
 }
 @media only screen and (min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio:2) and (orientation:landscape){
-min-height:375px;
-height:auto
+min-height:375px !important;
+height:auto;
 }
 @media only screen and (min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3) and (orientation:portrait){
-min-height:736px;
-height:auto
+min-height:736px !important;
+height:auto;
 }
 @media only screen and (min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3) and (orientation:landscape){
-min-height:414px;
-height:auto
+min-height:414px !important;
+height:auto;
 }
 .insideheadertextvak form,.form1{
 color:#fff;
-max-width:500px
+max-width:500px;
 }
 .insideheadertextvak form input,.insideheadertextvak form #input,.form1 input,.form1 #input{
 -webkit-transition:all 0.30s ease-in-out;
@@ -316,7 +316,8 @@ margin-bottom:0;
 border-radius:0 0 0 0;
 -moz-box-shadow:0 0 0 0 #ccc;
 -webkit-box-shadow:0 0 0 0 #ccc;
-box-shadow:0 0 0 0 #ccc
+box-shadow:0 0 0 0 #ccc;
+overflow:hidden;
 }
 #bodyminusfooter{
 margin:0 auto;
