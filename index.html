@@ -16,7 +16,6 @@
 		<link rel="icon" href="favicon.png" type="image/png" />		
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 		<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-		<style>#preload-01 { background: url(/fbg.jpg) no-repeat -9999px -9999px; }</style>
 	</head>
 	<body>
 		<div id="bodycon" class="bodycontainertrans o-wrapper">
@@ -38,7 +37,7 @@
 				</div>
 				<section id="content" name="top" class="hpg">
 					<section style="background-color:#000" >
-						<section id="header-back" style=" background-image: url('/fbg.jpg'); background-image:no-repeat; background-size: cover;  background-color:#000; background-position:right top;" class="container-fluid fullheight">
+						<section id="header-back" style="background-size: cover;  background-color:#000; background-position:right top;" class="container-fluid fullheight">
 							<div class="container animated slideInLeft" >
 								<h1 class="headerHeader">Van der Werff Hospitality</h1>
 								<p class="headerText">
@@ -255,6 +254,26 @@
 		<script src="js/revealonscroll.js"></script>
 		<script src="js/parallax.js"></script>
 		<script>
+		function preloader() {
+	if (document.getElementById) {
+		document.getElementById("header-back").style.background = "url('fbg.jpg') no-repeat";
+	}
+}
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+addLoadEvent(preloader);
+
 (function($) {
     
     jQuery.scrollSpeed = function(step, speed, easing) {
