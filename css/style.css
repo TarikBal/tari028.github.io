@@ -1093,7 +1093,7 @@ transition:transform 0.3s
 -moz-transition:transform 0.3s ease 0s;
 -webkit-transition:transform 0.3s ease 0s;
 -o-transition:transform 0.3s ease 0s;
-transition:transform 0.3s ease 0s
+transition:transform 0.3s ease 0s;
 overflow:hidden;
 }
 .c-menu__items{
