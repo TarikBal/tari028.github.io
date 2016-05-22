@@ -94,7 +94,7 @@
 						</div>
 					</section>
 					<section id="container-fluid " class="big-pad" name="waarom" style="background-color:#cfe0e3; color:#fff;">
-							<div class="container img-responsive revealOnScroll" data-animation="fadeInUp" data-timeout="1000"  >
+							<div class="container img-responsive revealOnScroll" data-animation="fadeInUp" data-timeout="0"  >
 										<h2 class="h1">Waarom doe ik dit?</h2>
 										<p class="lead">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis in sem in fermentum. Etiam sapien diam, ullamcorper nec convallis a, tincidunt a eros. Suspendisse non nibh arcu. Pellentesque sed ex blandit, pellentesque ex quis, aliquam nunc. 
@@ -105,7 +105,7 @@
 							</div>
 					</section>
 					<section id="container-fluid" class="big-pad" name="wat" >
-							<div class="container img-responsive revealOnScroll" data-animation="fadeInUp" data-timeout="1000" style="text-align:center; max-width: 100%;">
+							<div class="container img-responsive revealOnScroll" data-animation="fadeInUp" data-timeout="0" style="text-align:center; max-width: 100%;">
 										<h2 class="h1">Wat kan ik voor u betekenen?</h2>
 										<p class="lead">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis in sem in fermentum. Etiam sapien diam, ullamcorper nec convallis a, tincidunt a eros. Suspendisse non nibh arcu. Pellentesque sed ex blandit, pellentesque ex quis, aliquam nunc. 
@@ -155,7 +155,7 @@
 							</div>
 					</section>
 					<section id="container-fluid"  name="hoe" class="background parallax" data-img-width="2048" data-img-height="1365" data-diff="100" style=" background-image:url('bg.jpg'); ">
-								<div class="container big-pad img-responsive revealOnScroll" data-animation="fadeInUp" data-timeout="1000" style="max-width: 100%; color:#fff;">
+								<div class="container big-pad img-responsive revealOnScroll" data-animation="fadeInUp" data-timeout="0" style="max-width: 100%; color:#fff;">
 										<h2 class="h1">Hoe gaan we samen van start?</h2>
 										<p class="lead">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis in sem in fermentum. Etiam sapien diam, ullamcorper nec convallis a, tincidunt a eros. Suspendisse non nibh arcu. Pellentesque sed ex blandit, pellentesque ex quis, aliquam nunc. 
@@ -186,7 +186,7 @@
 								</div>
 							</div>
 						</section>	
-						<div class="container revealOnScroll" data-animation="fadeInUp" data-timeout="1000" style="padding-top:100px; padding-bottom:100px; max-width: 100%; color:#fff;">
+						<div class="container revealOnScroll" data-animation="fadeInUp" data-timeout="0" style="padding-top:100px; padding-bottom:100px; max-width: 100%; color:#fff;">
 								<h2 class="h1">Neem contact op! </h2>
 								<form>
 								  <fieldset class="form-group">
@@ -253,11 +253,7 @@
 		<script src="js/menu.js"></script>
 		<script src="js/revealonscroll.js"></script>
 		<script src="js/parallax.js"></script>
-		<script>$(document).ready(function(){$("#header-back").animate({opacity:0},0).css({"background-image":"url(fbg.jpg)"}).animate({opacity:1},2500)}),$(function(){$("a[href*=#]:not([href=#])").click(function(){if($(window).width()<600&&$(".c-menu__close").trigger("click"),location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var a=$(this.hash);if(a=a.length?a:$("[name="+this.hash.slice(1)+"]"),a.length)return $("html,body").animate({scrollTop:a.offset().top},1e3),!1}})});
-	// Plugin: jQuery.scrollSpeed
-// Source: github.com/nathco/jQuery.scrollSpeed
-// Author: Nathan Rutzky
-// Update: 1.0.2
+		<script>
 (function($) {
     
     jQuery.scrollSpeed = function(step, speed, easing) {
