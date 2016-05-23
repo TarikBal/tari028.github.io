@@ -50,7 +50,7 @@
 							<div class="row">
 								<div style="background-image:url('wie.jpg'); no-repeat; height:354px; background-size: cover;  background-color:rgb(193, 248, 206); background-position:right bottom; overflow:hidden;" class="col-md-6 revealOnScroll" data-animation="fadeInLeftBig" data-timeout="0">
 								</div>
-								<div class="col-md-6 revealOnScroll" data-animation="fadeInRightBig" data-timeout="0" style="overflow:hidden; background-color:#cfe0e3; color:#fff;">
+								<div class="col-md-6 revealOnScroll" data-animation="fadeInRightBig" data-timeout="0" style="overflow:hidden; background-color:#cfe0e3; color:#5C5765;">
 									<div class="container" style="max-width: 100%;">
 											<h2 class="h1">Wie ben ik?</h2>
 											<p class="lead">
@@ -93,7 +93,7 @@
 							</div>
 						</div>
 					</section>
-					<section id="container-fluid " class="big-pad" name="waarom" style="background-color:#cfe0e3; color:#fff;">
+					<section id="container-fluid " class="big-pad" name="waarom" style="background-color:#cfe0e3; color:#5C5765;">
 							<div class="container img-responsive revealOnScroll" data-animation="fadeInUp" data-timeout="0"  >
 										<h2 class="h1">Waarom doe ik dit?</h2>
 										<p class="lead">
@@ -177,7 +177,7 @@
 								<li ><a class="m-font nava" style="padding: 0px 10px;" href="#contact" title="CONTACT - wanneer maken we kennis met elkaar">CONTACT</a></li>
 							</nav>						
 							<div id="contactref" name="contact" style="overflow:hidden;" class="col-md-6 footerclass big-pad">
-								<h2 class="h2" style="color:#fff;" >Contact</h2>
+								<h2 class="h2" style="color:#5C5765;" >Contact</h2>
 								<li ><a class="m-font" style="padding: 0px 10px;"href="/" itemprop="legalName" >Van der Werff Hospitality</a></li>
 								<div itemprop="address">
 								<li ><a class="m-font" style="padding: 0px 10px;" itemprop="telephone" href="tel://0643896976">06 43896976</a></li>
@@ -186,7 +186,7 @@
 								</div>
 							</div>
 						</section>	
-						<div class="container revealOnScroll" data-animation="fadeInUp" data-timeout="0" style="padding-top:100px; padding-bottom:100px; max-width: 100%; color:#fff;">
+						<div class="container revealOnScroll" data-animation="fadeInUp" data-timeout="0" style="padding-top:100px; padding-bottom:100px; max-width: 100%; color:#5C5765;">
 								<h2 class="h1">Neem contact op! </h2>
 								<form>
 								  <fieldset class="form-group">
@@ -253,108 +253,6 @@
 		<script src="js/menu.js"></script>
 		<script src="js/revealonscroll.js"></script>
 		<script src="js/parallax.js"></script>
-		<script>$(document).ready(function(){$("#header-back").animate({opacity:0},0).css({"background-image":"url(fbg.jpg)"}).animate({opacity:1},2500)}),$(function(){$("a[href*=#]:not([href=#])").click(function(){if($(window).width()<600&&$(".c-menu__close").trigger("click"),location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var a=$(this.hash);if(a=a.length?a:$("[name="+this.hash.slice(1)+"]"),a.length)return $("html,body").animate({scrollTop:a.offset().top},1e3),!1}})});
-	// Plugin: jQuery.scrollSpeed
-// Source: github.com/nathco/jQuery.scrollSpeed
-// Author: Nathan Rutzky
-// Update: 1.0.2
-(function($) {
-    
-    jQuery.scrollSpeed = function(step, speed, easing) {
-        
-        var $document = $(document),
-            $window = $(window),
-            $body = $('html, body'),
-            option = easing || 'default',
-            root = 0,
-            scroll = false,
-            scrollY,
-            scrollX,
-            view;
-            
-        if (window.navigator.msPointerEnabled)
-        
-            return false;
-            
-        $window.on('mousewheel DOMMouseScroll', function(e) {
-            
-            var deltaY = e.originalEvent.wheelDeltaY,
-                detail = e.originalEvent.detail;
-                scrollY = $document.height() > $window.height();
-                scrollX = $document.width() > $window.width();
-                scroll = true;
-            
-            if (scrollY) {
-                
-                view = $window.height();
-                    
-                if (deltaY < 0 || detail > 0)
-            
-                    root = (root + view) >= $document.height() ? root : root += step;
-                
-                if (deltaY > 0 || detail < 0)
-            
-                    root = root <= 0 ? 0 : root -= step;
-                
-                $body.stop().animate({
-            
-                    scrollTop: root
-                
-                }, speed, option, function() {
-            
-                    scroll = false;
-                
-                });
-            }
-            
-            if (scrollX) {
-                
-                view = $window.width();
-                    
-                if (deltaY < 0 || detail > 0)
-            
-                    root = (root + view) >= $document.width() ? root : root += step;
-                
-                if (deltaY > 0 || detail < 0)
-            
-                    root = root <= 0 ? 0 : root -= step;
-                
-                $body.stop().animate({
-            
-                    scrollLeft: root
-                
-                }, speed, option, function() {
-            
-                    scroll = false;
-                
-                });
-            }
-            
-            return false;
-            
-        }).on('scroll', function() {
-            
-            if (scrollY && !scroll) root = $window.scrollTop();
-            if (scrollX && !scroll) root = $window.scrollLeft();
-            
-        }).on('resize', function() {
-            
-            if (scrollY && !scroll) view = $window.height();
-            if (scrollX && !scroll) view = $window.width();
-            
-        });       
-    };
-    
-    jQuery.easing.default = function (x,t,b,c,d) {
-    
-        return -c * ((t=t/d-1)*t*t*t - 1) + b;
-    };
-    
-})(jQuery);
-$(function() {  
-    // Custom Easing
-    jQuery.scrollSpeed(100, 800);
-});
-    </script>
+		<script>$(document).ready(function(){$("#header-back").animate({opacity:0},0).css({"background-image":"url(fbg.jpg)"}).animate({opacity:1},2500)}),$(function(){$("a[href*=#]:not([href=#])").click(function(){if($(window).width()<600&&$(".c-menu__close").trigger("click"),location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var a=$(this.hash);if(a=a.length?a:$("[name="+this.hash.slice(1)+"]"),a.length)return $("html,body").animate({scrollTop:a.offset().top},1e3),!1}})});</script>
 	</body>
 </html>
