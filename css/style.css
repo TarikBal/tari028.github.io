@@ -1408,6 +1408,7 @@ font-size: 16.9pt;
 #header-back .container{
 	padding-top:400px;
 }
+.specialmargin{margin-left: 0px;}
 @media all and (max-width:620px){
 .cfootersocial{
 float:none;
@@ -1425,7 +1426,7 @@ line-height: 0.8;
 }
 }
 @media all and (max-width:420px){
-
+.specialmargin{margin-left: -25px;}
 #logo {
     margin-left: -10px;
 }
